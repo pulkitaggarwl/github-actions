@@ -10,6 +10,11 @@ One can also use this delete a resource group, including all the resources withi
 
 action "Manage Azure Resources" {
   uses = "Azure/github-actions/arm@master"
+  env = {
+    AZURE_RESOURCE_GROUP = "<Resource Group Name"
+    AZURE_TEMPLATE_LOCATION = "<URL or Relative path in your repository>"
+    AZURE_TEMPLATE_PARAM_FILE = "<URL or Relative path in your repository>"
+  }
   needs = ["Azure Login"]
 }
 
