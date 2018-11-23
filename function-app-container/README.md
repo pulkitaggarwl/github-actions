@@ -1,4 +1,4 @@
-# GitHub Action for the Azure Login
+# GitHub Action for deploying containers on Azure Function App
 
 
 ## Usage
