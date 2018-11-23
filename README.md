@@ -1,3 +1,16 @@
+# GitHub Actions for Azure
+
+This repository contains GitHub Actions for Azure, for performing common tasks building and deploying your application, as well as a generic cli for doing arbitrary actions with the Az CLI commandline client.
+
+
+
+
+# Usage
+
+Usage information for individual commands can be found in their respective directories.
+
+
+
 
 # Contributing
 
