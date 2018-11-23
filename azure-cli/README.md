@@ -8,11 +8,13 @@ To log into a Azure, we recommend using the [Azure Login](../azure-login) Action
 
 ```
 
- action "Azure Login" {
-  uses = "Azure/github-actions/azure-login@master"
+ action "Azure CLI" {
+  uses = "Azure/github-actions/azure-cli@master"
   env = {
     AZURE_SCRIPT_PATH = "<Relative path in your repository>"
+    AZURE_SCRIPT = "az account list"
   }
+   needs = ["Azure Login"]
 }
 
 ```
