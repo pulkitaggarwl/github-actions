@@ -11,6 +11,9 @@ Because `$HOME` is persisted across Actions, the `az login` command will save th
 
  action "Azure Login" {
   uses = "Azure/github-actions/login@master"
+  env = {
+    AZURE_SUBSCRIPTION = "Subscription Name"
+  }
   secrets = ["AZURE_SERVICE_APP_ID", "AZURE_SERVICE_PASSWORD", "AZURE_SERVICE_TENANT"]
 }
 
