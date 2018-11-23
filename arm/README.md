@@ -27,6 +27,6 @@ action "Manage Azure Resources" {
     - `AZURE_TEMPLATE_PARAM_LOCATION` – **Mandatory** - Can we a URL or relative path in your github repository
     
   -  If `AZURE_RG_COMMAND` is "delete"
-    - `AZURE_RESOURCE_GROUP` – **Mandatory** 
+     - `AZURE_RESOURCE_GROUP` – **Mandatory** 
   
 
