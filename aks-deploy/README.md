@@ -23,7 +23,7 @@ action "Deploy to Azure Kubernetes Service" {
 
 ### Secrets
 
-- `DOCKER_PASSWORD` – **Required** for private registry or if trust has not been established with AKS. This is the password used to log in to your Docker registry. 
+- `DOCKER_PASSWORD` – **Optional** if public registry or if trust has been established with AKS. This is the password used to log in to your Docker registry. 
 - `KUBE_CONFIG_DATA` - **Optional**. "kubectl config" file content with credentials for Kubernetes to access the cluster. If we use this option, we wont need ["Azure Login"] action as a precursor to this one. 
 
 
@@ -32,7 +32,7 @@ action "Deploy to Azure Kubernetes Service" {
 
 - `AKS_CLUSTER_NAME` – **Required** 
 - `DOCKER_REGISTRY_URL` – **Required** 
-- `DOCKER_USERNAME` – **Required** for private registry or if trust has not been established with AKS. This is the username used to log in to your Docker registry.
+- `DOCKER_USERNAME` – **Optional** if private registry or if trust has been established with AKS. This is the username used to log in to your Docker registry.
 - `CONTAINER_IMAGE_NAME` – **Required** 
 - `CONTAINER_IMAGE_TAG` – **Optional** - ( default value =  "latest").  
 - `HELM_RELEASE_NAME` - **Optional** ( default value =  "aks-deploy").  
