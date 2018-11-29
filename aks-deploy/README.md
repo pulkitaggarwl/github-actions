@@ -32,7 +32,7 @@ action "Deploy to Azure Kubernetes Service" {
 
 - `AKS_CLUSTER_NAME` – **Required** 
 - `DOCKER_REGISTRY_URL` – **Required** 
-- `DOCKER_USERNAME` – **Optional** if private registry or if trust has been established with AKS. This is the username used to log in to your Docker registry.
+- `DOCKER_USERNAME` – **Optional** if public registry or if trust has been established with AKS. This is the username used to log in to your Docker registry.
 - `CONTAINER_IMAGE_NAME` – **Required** 
 - `CONTAINER_IMAGE_TAG` – **Optional** - ( default value =  "latest").  
 - `HELM_RELEASE_NAME` - **Optional** ( default value =  "aks-deploy").  
