@@ -27,7 +27,7 @@ Because `$HOME` is persisted across Actions, the `az login` command will save th
 - `AZURE_SERVICE_TENANT` – **Required** 
 
 
-You can create get the above details by running " az ad sp create-for-rbac " command([more info](https://docs.microsoft.com/en-us/cli/azure/ad/sp?view=azure-cli-latest#az-ad-sp-create-for-rbac)).
+You can get the above details by running " az ad sp create-for-rbac " command([more info](https://docs.microsoft.com/en-us/cli/azure/ad/sp?view=azure-cli-latest#az-ad-sp-create-for-rbac)).
 
 
 
