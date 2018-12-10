@@ -35,6 +35,6 @@ You can get the above details by running " az ad sp create-for-rbac " command([m
 
 ### Environment variables
 
-- `AZURE_SUBSCRIPTION` – **Optional** if have access to just one subscription
+- `AZURE_SUBSCRIPTION` – **Optional** if you have access to just one subscription
 
 
